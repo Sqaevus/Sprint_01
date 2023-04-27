@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encriptador/Desencriptador</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <h1>Encriptador/Desencriptador</h1>
+
+    <section>
+        <label for="txtTexto">Texto:</label>
+        <br>
+        <textarea id="txtTexto" name="txtTexto" rows="10" cols="50" oninput="mostrarImagen()" placeholder="Texto desencriptado"></textarea>
+        <div class="textarea-container">
+            <textarea id="txtResultado"></textarea>
+            <div id="imagen" class="imagen-container">
+                <img src="imagen_01.png" alt="Imagen">
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+        <button onclick="copiar()">Copiar</button>
+    </section>
+
+    <script src="funciones.js"></script>
+
+    <footer>
+        <p>Desarrollado por Manuel Soto &copy; 2023</p>
+        <p>Contacto: correo@ejemplo.com</p>
+        <p>Teléfono: +56 1 2345 6789</p>
+    </footer>
+</body>
+</html>
